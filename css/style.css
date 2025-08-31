@@ -1,0 +1,42 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.screen {
+  text-align: center;
+  background: #ffffffdd;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input, select {
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
