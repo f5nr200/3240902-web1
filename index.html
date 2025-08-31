@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برنامج تفاعلي متعدد اللغات</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- شاشة الترحيب -->
+  <div id="welcome-screen" class="screen">
+    <h1>مرحباً بك في برنامجي</h1>
+    <p>هذا البرنامج يتيح لك تجربة ++ و -- بطريقة ممتعة وتفاعلية</p>
+    <button onclick="startProgram()">ابدأ</button>
+  </div>
+
+  <!-- نموذج البيانات -->
+  <div id="form-screen" class="screen hidden">
+    <h2>أدخل بياناتك</h2>
+    <form id="userForm">
+      <label>الاسم: <input type="text" id="name" required></label><br><br>
+      <label>العمر: <input type="number" id="age" required></label><br><br>
+      <label>الجنس: 
+        <select id="gender" required>
+          <option value="">اختر</option>
+          <option value="male">ذكر</option>
+          <option value="female">أنثى</option>
+        </select>
+      </label><br><br>
+      <label>اللغة:
+        <select id="language" required>
+          <option value="">اختر اللغة</option>
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+        </select>
+      </label><br><br>
+      <button type="submit">التالي</button>
+    </form>
+  </div>
+
+  <!-- شاشة البرنامج بعد اختيار اللغة -->
+  <div id="program-screen" class="screen hidden">
+    <h2 id="program-title">برنامج ++ و --</h2>
+    <p id="value">0</p>
+    <button onclick="preIncrement()">++pre</button>
+    <button onclick="postIncrement()">post++</button>
+    <button onclick="preDecrement()">--pre</button>
+    <button onclick="postDecrement()">post--</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
